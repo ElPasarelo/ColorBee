@@ -60,17 +60,41 @@
 		08319D9E2052E4E800579D91 /* ColorBee */ = {
 			isa = PBXGroup;
 			children = (
+				08319DB92052E6AA00579D91 /* Scene */,
+				08319DB82052E69E00579D91 /* Controller */,
+				08319DB72052E68500579D91 /* Visuel */,
 				08319D9F2052E4E800579D91 /* AppDelegate.swift */,
-				08319DA12052E4E800579D91 /* GameScene.sks */,
-				08319DA32052E4E800579D91 /* Actions.sks */,
-				08319DA52052E4E800579D91 /* GameScene.swift */,
-				08319DA72052E4E800579D91 /* GameViewController.swift */,
-				08319DA92052E4E800579D91 /* Main.storyboard */,
 				08319DAC2052E4E800579D91 /* Assets.xcassets */,
-				08319DAE2052E4E800579D91 /* LaunchScreen.storyboard */,
 				08319DB12052E4E900579D91 /* Info.plist */,
 			);
 			path = ColorBee;
+			sourceTree = "<group>";
+		};
+		08319DB72052E68500579D91 /* Visuel */ = {
+			isa = PBXGroup;
+			children = (
+				08319DA12052E4E800579D91 /* GameScene.sks */,
+				08319DA32052E4E800579D91 /* Actions.sks */,
+				08319DA92052E4E800579D91 /* Main.storyboard */,
+				08319DAE2052E4E800579D91 /* LaunchScreen.storyboard */,
+			);
+			path = Visuel;
+			sourceTree = "<group>";
+		};
+		08319DB82052E69E00579D91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08319DA72052E4E800579D91 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		08319DB92052E6AA00579D91 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				08319DA52052E4E800579D91 /* GameScene.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
