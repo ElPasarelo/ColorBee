@@ -14,6 +14,8 @@ class GameScene: SKScene {
     let cameraNode = SKCameraNode()
     let sol = Sol()
     var joueur: Joueur?
+    var scoreLabel = MonLabel()
+    var scoreDuJoueur = 0
     
     
     override func didMove(to view: SKView) {
@@ -25,6 +27,11 @@ class GameScene: SKScene {
         
         sol.misEnPlace(scene: self)
         addChild(sol)
+        
+        scoreLabel.miseEnPlace(x: -(UIScreen.main.bounds.width / 1.5), y: -(UIScreen.main.bounds.height / 1.5))
+        scoreLabel.ajoutTexte(String(scoreDuJoueur))
+        cameraNode.addChild(scoreLabel)
+        
         
         ajouterJoueur()
         
