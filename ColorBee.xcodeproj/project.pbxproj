@@ -16,6 +16,8 @@
 		08319DAD2052E4E800579D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08319DAC2052E4E800579D91 /* Assets.xcassets */; };
 		08319DB02052E4E800579D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08319DAE2052E4E800579D91 /* LaunchScreen.storyboard */; };
 		08319DBC2052E99800579D91 /* Joueur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08319DBB2052E99800579D91 /* Joueur.swift */; };
+		08319DBF2052EC1400579D91 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08319DBE2052EC1400579D91 /* Constantes.swift */; };
+		08319DC12052ECA700579D91 /* Sol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08319DC02052ECA700579D91 /* Sol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		08319DAF2052E4E800579D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08319DB12052E4E900579D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08319DBB2052E99800579D91 /* Joueur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joueur.swift; sourceTree = "<group>"; };
+		08319DBE2052EC1400579D91 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		08319DC02052ECA700579D91 /* Sol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		08319D9E2052E4E800579D91 /* ColorBee */ = {
 			isa = PBXGroup;
 			children = (
+				08319DBD2052EBFF00579D91 /* Resources */,
 				08319DBA2052E98000579D91 /* Model */,
 				08319DB92052E6AA00579D91 /* Scene */,
 				08319DB82052E69E00579D91 /* Controller */,
@@ -104,8 +109,17 @@
 			isa = PBXGroup;
 			children = (
 				08319DBB2052E99800579D91 /* Joueur.swift */,
+				08319DC02052ECA700579D91 /* Sol.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		08319DBD2052EBFF00579D91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08319DBE2052EC1400579D91 /* Constantes.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08319DBF2052EC1400579D91 /* Constantes.swift in Sources */,
 				08319DA62052E4E800579D91 /* GameScene.swift in Sources */,
+				08319DC12052ECA700579D91 /* Sol.swift in Sources */,
 				08319DBC2052E99800579D91 /* Joueur.swift in Sources */,
 				08319DA82052E4E800579D91 /* GameViewController.swift in Sources */,
 				08319DA02052E4E800579D91 /* AppDelegate.swift in Sources */,

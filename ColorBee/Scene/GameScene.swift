@@ -12,7 +12,9 @@ import GameplayKit
 class GameScene: SKScene {
     
     let cameraNode = SKCameraNode()
+    let sol = Sol()
     var joueur: Joueur?
+    
     
     override func didMove(to view: SKView) {
         physicsWorld.gravity.dy = -5
@@ -20,6 +22,9 @@ class GameScene: SKScene {
         camera = cameraNode
         addChild(cameraNode)
         cameraNode.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        
+        sol.misEnPlace(scene: self)
+        addChild(sol)
         
         ajouterJoueur()
         
